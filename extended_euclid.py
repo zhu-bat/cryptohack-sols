@@ -13,7 +13,7 @@ b = OwO
 """
 Uses the Euclidean algorithm to compute the 
 gcd of a and b. That is, gcd(a, b) == gcd(b, r)
-where a = q * b - r.
+where a = q * b + r.
 """
 
 def gcd(a, b):
@@ -23,6 +23,10 @@ def gcd(a, b):
         return b
     return gcd(b, a % b)
 
+"""
+Returns a dict of entries r : [[1, a], [-q, b]]
+where r = a - q * b.
+"""
 def gcdDict(a, b, d):
     if a % b == 0:
         return d
