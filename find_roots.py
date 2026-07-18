@@ -7,6 +7,7 @@ Otherwise, print "Quadratic Non-Residue".
 
 Preconditions: 
 - x < p
+- p is smol
 
 """
 def find_roots(x, p):
